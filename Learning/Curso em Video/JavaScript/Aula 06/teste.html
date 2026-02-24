@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de Valores</title>
+</head>
+
+<body>
+    <h1>Convertor de Moeda</h1>
+
+    <p>Coloque o valor que gostaria converter</p>
+    <input type="number" name="Valor" id="Valor">
+
+    <p>BR</p>
+    <input type="number" name="R$" id="BR">
+    <p>USD</p>
+    <input type="number" name="USD" id="USD">
+    <p>Euro</p>
+    <input type="number" name="€" id="Euro">
+    <p>ARS</p>
+    <input type="number" name="ARS" id="ARS">
+    <input type="button" value="convertor" onclick="Converter()">
+    
+
+    <script>
+        function convertor() {
+            var real = toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+            var r1 = window.document.getElementById('BR')
+            r1.innerHTML = `${real}`
+            
+        }
+        /*var valor = window.prompt("Qual valor gostaria de converter?")
+        var moeda = window.prompt("Para qual moeda gostaria de converter?\n1 - R$\n2 - USD\n3 - €\n4 - ARS")
+        n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+        n2.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'})
+        n3.toLocaleString('pt-BR',{style: 'currency', currency: '€'})
+        n4.toLocalestring('pt-BR',{style: 'currency', currency: 'ARS'}) */
+
+       
+    </script>
+</body>
+
+</html>
