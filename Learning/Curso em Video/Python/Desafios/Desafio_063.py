@@ -4,18 +4,17 @@ print('-'*25)
 print('Sequência de Fibonacci')
 print('-'*25)
 
-n = int(input('Digite um número para vermos a sequência: '))
-count = 0
-n2 = n - 1
-n3 = n - 2
-while count < 10:
-    print('1-{}'.format(n))
-    print('2-{}'.format(n2))
-    print('3-{}'.format(n3))
+n = int(input('Qual termo gostaria de ver na sequência de Fibonacci:  '))
+termo1 = 0
+termo2 = 1
+termo3 = 1
+count = 3
+print('{} → {} → '.format(termo1, termo2), end='')
+while count <= n:
+    termo3 = termo1 + termo2
+    print('{} → '.format(termo3), end='')
+    termo1 = termo2
+    termo2 = termo3
     count += 1
-    n += 1
-    n2 += 1
-    n3 += 1
-    if n2 >= 0 and n3 >= 0:
-        n = (n2 + n3)
 print('FIM')
+print('-'*40)
