@@ -8,11 +8,7 @@ print('VAMOS COMEÇAR!')
 sleep(1)
 print('-='*35)
 
-maior = 0
-menor = 0
-count = 0
-total = 0
-media = 0
+maior = menor = count = media = total = 0
 prox = 'S'
 while prox != 'N':
     num = int(input('Digite: '))
