@@ -4,7 +4,7 @@
 # C - Qual é o nome do produto mais barato.
 
 print('='*30)
-print('Controle de Gastos')
+print('   Controle de Gastos')
 print('='*30)
 
 low_price = 0
@@ -14,7 +14,7 @@ total = 0
 
 while True:
     name_produto = str(input('Qual o nome do produto? '))
-    valor_produto = float(input('Digite o valor do produto: '))
+    valor_produto = float(input('Digite o valor do produto: R$ '))
     if low_price == 0:
         low_price = valor_produto
         exepensive = valor_produto
@@ -26,6 +26,8 @@ while True:
         expensive += 1
     total = total + valor_produto
     cont = str(input('Gostaria de adicionar mais [S/N]? '))
+    while cont not in 'SsNn':
+        cont = str(input('Digite uma opção válida [S/N]: '))
     if cont not in ('Nn'):
         print('Vamos lá')
         print('-'*30)

@@ -24,8 +24,12 @@ while True:
     if idade < 20 and sexo =='f':
         w_less_20 += 1
     total += 1
+    print('-'*30)
     print('Cadastro realizado!')
+    print('-'*30)
     cont = str(input('Gostaria de continuar [S/N]? '))
+    while cont not in 'SsNn':
+        cont = str(input('Digite um opção válida [S/N]: '))
     if cont not in 'Nn':
         print('-'*30)
         print('Reiniciando')

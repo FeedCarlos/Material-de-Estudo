@@ -1,6 +1,6 @@
-nome = str(input('Qual é seu nome? '))
-if nome == 'Gustavo':
-    print('Que nome lindo você tem!')
+n = str(input('Digite um frase: '))
+vogal = n[0] in 'aeiou'
+if vogal == True:
+    print('É vogal')
 else:
-    print('Seu nome é tão normal!')
-print('Bom dia {}'.format(nome))
+    print('Não é vogal')
