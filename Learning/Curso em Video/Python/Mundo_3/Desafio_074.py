@@ -2,16 +2,14 @@
 
 from random import randint
 
-c = 0
-maior = 0
-menor = 0
-
-n1 = randint(0, 100)
-n2 = randint(0, 100)
-n3 = randint(0, 100)
-n4 = randint(0, 100)
-n5 = randint(0, 100)
-
+n = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+print('-='*30)
+print('Os Valores Sortiados Foram: ', end='')
+for c in n:
+    print(f'{c}, ', end='')
+print(f'\nO maior valor sorteado foi {max(n)}')
+print(f'O menor valor sorteado foi {min(n)}')
+'''
 maior = n1 
 menor = n1 
 
@@ -40,3 +38,4 @@ print(f' {num[0]},  {num[1]},  {num[2]},  {num[3]},  {num[4]}')
 print(f'O maior número gerado foi {maior}')
 print(f'O menor número gerado foi {menor}')
 print('-'*30)
+'''
