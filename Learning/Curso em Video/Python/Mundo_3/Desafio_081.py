@@ -14,7 +14,8 @@ while True:
         break
 print('-='*30)
 print(f'A quanitade de números digitados foi {len(lista)}')
-lista.reverse()
+lista.sort(reverse=True)
+#lista.reverse()
 print(f'Os valores digitados foram {lista}')
 if 5 in lista:
     print(f'O valor 5 está na lista, na posição {lista.index(5)+1}')
