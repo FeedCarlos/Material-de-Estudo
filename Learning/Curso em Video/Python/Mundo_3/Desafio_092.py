@@ -1,0 +1,1 @@
+# Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-os (con idade) em um dicionário se por acaso o CTPS for diferente de ZERO, também o ano de contratação e o sálario. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aponsentar.
