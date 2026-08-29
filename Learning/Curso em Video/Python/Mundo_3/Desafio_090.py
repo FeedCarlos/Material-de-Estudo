@@ -18,8 +18,12 @@ while True:
     
 
 #test['Nome'] = "Augusto"
-print(bkp)
-print(test)
-print(test['Nome'])
-print(test['Media'])
-print(test['Situacao'])
+print('-='*30)
+print(f'''
+- nome é igual a {test["Nome"]} 
+- média é igual a {test["Media"]}
+- situação é igual a {test["Situacao"]}
+  ''')
+# print(test['Nome'])
+# print(test['Media'])
+# print(test['Situacao'])
