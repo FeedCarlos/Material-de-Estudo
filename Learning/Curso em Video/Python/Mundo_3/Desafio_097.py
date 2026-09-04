@@ -6,3 +6,13 @@ escreva('Olá, Mundo!')
 Saída:
 Olá, Mundo!
 '''
+
+def escreva(msg):
+    tam = len(msg) + 4
+    print("~"*tam)
+    print(f"  {msg}")
+    print("~"*tam)
+
+escreva("Gustavo Guanabara")
+escreva("Mitsubyshi")
+escreva("Toyota")

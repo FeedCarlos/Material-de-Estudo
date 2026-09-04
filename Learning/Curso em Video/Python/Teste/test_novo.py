@@ -1,9 +1,7 @@
-mulheres = ['Ana', 'Paula', 'Fernanda']
+lista = [76, 50, 5, 7, 21, 65]
 
-
-if len(mulheres) == 1:
-    print(f"Só houve uma única mulher cadastrada, que foi a {' '.join(mulheres)}")
-elif len(mulheres) > 1:
-    print(f"As mulheres cadastradas foram {', '.join(mulheres[:-1])} e {mulheres[-1]}")
-else:
-    print("Não houve mulheres cadastradas!")
+for v in lista:
+    if v % 2 == 0:
+        print(f"{v} é par")
+    else:
+        print(f"{v} é ímpar")
