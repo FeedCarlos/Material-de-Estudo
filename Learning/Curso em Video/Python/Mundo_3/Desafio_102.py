@@ -6,6 +6,12 @@ print("~"*12)
 print()
 
 def fatorial(num = 1, show=True):
+    '''
+    Calculador de fatorial
+    param n: O número que será realizado o calculo
+    param show: (OPCIONAL) Mostra ou não o calculo
+    return: Retorna o valor do calculo
+    '''
     f = 1
    
     for v in range(num, 0, -1):
@@ -17,8 +23,8 @@ def fatorial(num = 1, show=True):
                 print(f"{v} = ", end='')
     return f
 
-
-print(f"{fatorial(4)}")
+help(fatorial)
+#print(f"{fatorial(5, show=False)}")
 
 
 
